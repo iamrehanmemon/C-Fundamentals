@@ -49,4 +49,18 @@ Various String Formatting MEthods such As N1.
 
 3) Working with Classes And Objects
 
+Class - Blueprint to initialize new Objects
+Object - Objects created using new keywords Constructor are used for object creation and is used to gain control
+
+C# initializes implicit constructor if not wriiten by us
+
+Classes are written for some protection and encapsulation is hiding complexities and details that are not important.
+
+Access modifiers are public, protected
+
+this is implicitely variable available inside of methdo & constructor used to refer to the objects it has been refering now.
+
+AddGrade is instance member of Class 
+
+Learned how to instantiate object,class with public instance members, Constructor And some private fields.
 
