@@ -64,3 +64,7 @@ AddGrade is instance member of Class
 
 Learned how to instantiate object,class with public instance members, Constructor And some private fields.
 
+4) Testing your Code 
+Unit tests - To verify the program is running properly or not. Checks for worst case scenarios. Done using Test Runner. Automating the testing process.
+XUnit.net Library for Testing
+
