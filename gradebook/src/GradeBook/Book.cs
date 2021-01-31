@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace GradeBook 
 {
-    class Book 
+    public class Book 
     {   
         // Here Public is Access Modifier 
         public Book(string name)
@@ -18,22 +18,21 @@ namespace GradeBook
             grades.Add(grade);
         }
 
-        public void ShowStatistics()
-        {
-            var result = 0.0 ;
-            var highGrade = double.MinValue;
-            var lowGrade = double.MaxValue;
-            
-            foreach(var number in grades){
-                highGrade = Math.Max(number,highGrade);
-                lowGrade = Math.Min(number,lowGrade);
-                result += number ;
+        public Statistics GetStatistics()
+        {   
+            var result = new Statistics();
+            result.Average = 0.0;
+            result.High = double.MinValue;
+            result.Low = double.MaxValue;
+             
+            foreach(var grade in grades){
+                result.High = Math.Max(grade,result.High);
+                result.Low = Math.Min(grade,result.Low);
+                result.Average += grade; 
             }
-
-            var avg = result/grades.Count;
-            Console.WriteLine($"The Average Grade is {avg:N1} !");
-            Console.WriteLine($"The Highest Grade is {highGrade:N1} !");
-            Console.WriteLine($"The Lowest Grade is {lowGrade:N1} !");
+            result.Average /= grades.Count ;
+            
+            return result;
         }
 
         //this is called as Field. Access Modifier can be added to Field
