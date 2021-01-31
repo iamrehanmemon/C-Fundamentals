@@ -1,0 +1,52 @@
+1) Introducing C# & .NET
+.NET has Two Types
+1) Windows Framework
+2) .NET Core (Works on Linux,Mac & Windows)
+
+.NET is Common Language Runtime / FCL (Framework Class Library) containes Library written & tested by developers since its open source.
+
+To Start New Project in C#
+
+cd to the folder 
+
+Commands to be written in cmd/ console
+dotnet
+dotnet --info
+dotnet --help sdk commands 
+dotnet new
+mkdir gradebook
+mkdir src ->  mkdir GradeBook
+mkdir test
+dotnet new console Makes A new console Application csproj file is C#.
+dotnet run
+
+from gradebook 
+dotnet run --project src\GradeBook
+dotnet restore
+
+Nuget Packages written by other developers can be used by us. Whenever we require a feature that is written in nuget packages. Package Feed
+Nuget is nothing but npm of node js 
+
+dotnet build -> converts into binary format which is .dll extensions is output of dotnet build
+
+Can delete bin and obj file as long as u have src code
+
+E:\Capgemini\Azure Training\C# Fundamentals\gradebook\src\GradeBook> dotnet .\bin\Debug\net5.0\GradeBook.dll
+
+dotnet run Rehan Parameter for CLI
+\dotnet run -- Rehan Parameter for Application 
+
+Debugging in C#
+F5 Click on color circle on the line you need to Debug
+
+2) Learning the C# Syntax
+
+Learn about Variable Declaration , Looping of For statement 
+Array declaration methods
+Dynamic arrays known As List declaration 
+Refrences to the class Object using Ctrl + Period
+Various String Formatting MEthods such As N1.
+
+3) Working with Classes And Objects
+
+

@@ -1,0 +1,16 @@
+E:\Capgemini\Azure Training\C# Fundamentals\gradebook\src\GradeBook\bin\Debug\net5.0\GradeBook.exe
+E:\Capgemini\Azure Training\C# Fundamentals\gradebook\src\GradeBook\bin\Debug\net5.0\GradeBook.deps.json
+E:\Capgemini\Azure Training\C# Fundamentals\gradebook\src\GradeBook\bin\Debug\net5.0\GradeBook.runtimeconfig.json
+E:\Capgemini\Azure Training\C# Fundamentals\gradebook\src\GradeBook\bin\Debug\net5.0\GradeBook.runtimeconfig.dev.json
+E:\Capgemini\Azure Training\C# Fundamentals\gradebook\src\GradeBook\bin\Debug\net5.0\GradeBook.dll
+E:\Capgemini\Azure Training\C# Fundamentals\gradebook\src\GradeBook\bin\Debug\net5.0\ref\GradeBook.dll
+E:\Capgemini\Azure Training\C# Fundamentals\gradebook\src\GradeBook\bin\Debug\net5.0\GradeBook.pdb
+E:\Capgemini\Azure Training\C# Fundamentals\gradebook\src\GradeBook\obj\Debug\net5.0\GradeBook.csprojAssemblyReference.cache
+E:\Capgemini\Azure Training\C# Fundamentals\gradebook\src\GradeBook\obj\Debug\net5.0\GradeBook.GeneratedMSBuildEditorConfig.editorconfig
+E:\Capgemini\Azure Training\C# Fundamentals\gradebook\src\GradeBook\obj\Debug\net5.0\GradeBook.AssemblyInfoInputs.cache
+E:\Capgemini\Azure Training\C# Fundamentals\gradebook\src\GradeBook\obj\Debug\net5.0\GradeBook.AssemblyInfo.cs
+E:\Capgemini\Azure Training\C# Fundamentals\gradebook\src\GradeBook\obj\Debug\net5.0\GradeBook.csproj.CoreCompileInputs.cache
+E:\Capgemini\Azure Training\C# Fundamentals\gradebook\src\GradeBook\obj\Debug\net5.0\GradeBook.dll
+E:\Capgemini\Azure Training\C# Fundamentals\gradebook\src\GradeBook\obj\Debug\net5.0\ref\GradeBook.dll
+E:\Capgemini\Azure Training\C# Fundamentals\gradebook\src\GradeBook\obj\Debug\net5.0\GradeBook.pdb
+E:\Capgemini\Azure Training\C# Fundamentals\gradebook\src\GradeBook\obj\Debug\net5.0\GradeBook.genruntimeconfig.cache
