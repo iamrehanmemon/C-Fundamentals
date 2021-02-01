@@ -103,3 +103,7 @@ C# passes Name by Value in most of the Cases
 
 
 Garbage Collector keeps a track of all the variable created and refernce using pointers. It deallocates to clean up memory so that it doesnt get exhausted
+
+6)Controlling the Flow of Execution
+
+Learned About Looping Statement Such as if, foreach , do-while executes atleast onece , break & continue statement, go to (not recommend in bussiness apllication), Advance Switch Statement & Pattern matching,Taking User Input, Handling Exceptions.
