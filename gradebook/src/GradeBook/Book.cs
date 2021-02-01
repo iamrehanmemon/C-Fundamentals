@@ -10,7 +10,7 @@ namespace GradeBook
         {
             // Constructor should have the same name as Class
             grades = new List<double>();
-            this.name = name;
+            Name = name;
         }
 
         public void AddGrade(double grade)
@@ -37,7 +37,7 @@ namespace GradeBook
 
         //this is called as Field. Access Modifier can be added to Field
         private List<double> grades;
-        private string name;
+        public string Name;
 
     }
 }

@@ -42,10 +42,10 @@ F5 Click on color circle on the line you need to Debug
 2) Learning the C# Syntax
 
 Learn about Variable Declaration , Looping of For statement 
-Array declaration methods
+Array declaration methods as well as List declaration.
 Dynamic arrays known As List declaration 
 Refrences to the class Object using Ctrl + Period
-Various String Formatting MEthods such As N1.
+Various String Formatting Methods such As N1.
 
 3) Working with Classes And Objects
 
@@ -68,3 +68,38 @@ Learned how to instantiate object,class with public instance members, Constructo
 Unit tests - To verify the program is running properly or not. Checks for worst case scenarios. Done using Test Runner. Automating the testing process.
 XUnit.net Library for Testing
 
+
+5)Working with Reference Types and Value Types
+Reference types
+var b = new Book("Grades");
+
+b=1072
+1072 is the address that points to the Book Object
+
+Value Types x=3
+3 is saved in variable X
+
+dotnet new sln
+dotnet sln add .\src\GradeBook\GradeBook.csproj
+dotnet build -> builds our project as well as test the unit tests and shows the result
+
+please be caution to add [Fact] before each of the test inorder for the dotnet test command to recognise that the function is a test function
+Day to Day programming Doesnt uses pass by refernce that often but still sometimes bussiness require to use pass by reference
+
+Ref & out is similar but in out it assumes it is not initialize so it must be assigned before exiting but in ref u dont need to assign
+
+
+Rules :
+
+Value Types 
+public struct Point{}
+
+Reference types
+Defined by Class 
+public class Person {}
+
+
+C# passes Name by Value in most of the Cases
+
+
+Garbage Collector keeps a track of all the variable created and refernce using pointers. It deallocates to clean up memory so that it doesnt get exhausted
