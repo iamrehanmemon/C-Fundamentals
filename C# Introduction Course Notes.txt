@@ -107,3 +107,12 @@ Garbage Collector keeps a track of all the variable created and refernce using p
 6)Controlling the Flow of Execution
 
 Learned About Looping Statement Such as if, foreach , do-while executes atleast onece , break & continue statement, go to (not recommend in bussiness apllication), Advance Switch Statement & Pattern matching,Taking User Input, Handling Exceptions.
+
+7)Building Types
+Method Overloading - Methods with same name but different signature i.e it looks at the parameter type but not the return type.
+Property - Similar to Field, it can encapsulate state and can store data
+Auto Property using Get,Set
+Readonly Keyword - Can Only be defined in Constructor or variable initializer
+Constructor Overloading
+Const Field - Cannot be changed using Constructor
+Events - Delegate is defining how the method would look like. it has a define structure.

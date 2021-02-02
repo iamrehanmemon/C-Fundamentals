@@ -2,13 +2,16 @@ using System;
 using System.Collections.Generic;
 
 namespace GradeBook 
-{
+{   
+    public delegate void GradeAddedDelegate(object sender, EventArgs args );
+
     public class Book 
     {   
         // Here Public is Access Modifier 
         public Book(string name)
         {
             // Constructor should have the same name as Class
+            // category = "";
             grades = new List<double>();
             Name = name;
         }
@@ -38,12 +41,19 @@ namespace GradeBook
         {   
             if(grade <= 100 && grade >= 0){
                 grades.Add(grade);
+                if (GradeAdded != null)
+                {
+                    GradeAdded(this, new EventArgs());
+                }
+                //..
             }
             else {
                 throw new ArgumentException($"Invalid {nameof(grade)}");
             }
             
         }
+
+        public event GradeAddedDelegate GradeAdded;
 
         public Statistics GetStatistics()
         {   
@@ -104,7 +114,30 @@ namespace GradeBook
 
         //this is called as Field. Access Modifier can be added to Field
         private List<double> grades;
-        public string Name;
+        public string Name 
+        {
+            // get
+            // {
+            //     return name;
+            // }
+            // set
+            // {   
+            //     if(!String.IsNullOrEmpty(value))
+            //     {
+            //         name = value ;
+            //     }
+                
+            // }
+
+            //Auto Property
+            get;
+            //private set; //Inaccessible name from BOOk.cs ie after book is made name cannot be change
+            set;
+        }
+        // private string name;
+
+        // readonly string category = "Science";
+        public const string CATEGORY = "Science";
 
     }
 }
