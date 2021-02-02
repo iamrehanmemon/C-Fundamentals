@@ -32,12 +32,10 @@ namespace GradeBook
                     return 'D';
                   
                 default:
-                    return  'F';
-                       
+                    return  'F';      
                 }
             }
         }
-
         public double Sum;
         public int Count;
 
@@ -65,7 +63,6 @@ namespace GradeBook
             //     result.Average += grade; 
             // } 
             // result.Average /= grades.Count ;
-
         }
 
         public Statistics()

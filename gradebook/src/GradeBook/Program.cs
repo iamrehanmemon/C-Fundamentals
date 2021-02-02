@@ -12,7 +12,6 @@ namespace GradeBook
             IBook book = new DiskBook("Rehan's Grade Book");
             book.GradeAdded += OnGradeAdded;
 
-            
             EnterGrade(book);
 
             var stats = book.GetStatistics();
@@ -59,8 +58,7 @@ namespace GradeBook
 
             }
             // book.AddGrade(89.1);
-            // book.AddGrade(90.5);
-            // book.AddGrade(77.5);
+
         }
 
         static void OnGradeAdded(object sender , EventArgs e)

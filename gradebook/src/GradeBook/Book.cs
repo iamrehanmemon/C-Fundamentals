@@ -62,7 +62,6 @@ namespace GradeBook
                     GradeAdded(this , new EventArgs());
                 }
             }
-            
             // writer.Dispose();
         }
 
@@ -129,7 +128,6 @@ namespace GradeBook
             else {
                 throw new ArgumentException($"Invalid {nameof(grade)}");
             }
-            
         }
 
         public override event GradeAddedDelegate GradeAdded;
@@ -160,7 +158,6 @@ namespace GradeBook
             //     {
             //         name = value ;
             //     }
-                
             // }
 
             //Auto Property
@@ -172,6 +169,5 @@ namespace GradeBook
 
         // readonly string category = "Science";
         public const string CATEGORY = "Science";
-
     }
 }
