@@ -7,16 +7,27 @@ namespace GradeBook
     class Program
     {
         static void Main(string[] args)
-        {   
-            var book = new Book("Rehan's Grade Book");
+        {
+            // var book = new InMemoryBook("Rehan's Grade Book");
+            IBook book = new DiskBook("Rehan's Grade Book");
             book.GradeAdded += OnGradeAdded;
-            book.GradeAdded += OnGradeAdded;
-            book.GradeAdded -= OnGradeAdded;
-            book.GradeAdded += OnGradeAdded;
-            // var done= false;
 
-            // while(!done)
-            while(true)
+            
+            EnterGrade(book);
+
+            var stats = book.GetStatistics();
+
+            Console.WriteLine($"For the book Category : {InMemoryBook.CATEGORY}");
+            Console.WriteLine($"For the book name : {book.Name}");
+            Console.WriteLine($"The Average Grade is {stats.Average:N1} !");
+            Console.WriteLine($"The Highest Grade is {stats.High:N1} !");
+            Console.WriteLine($"The Lowest Grade is {stats.Low:N1} !");
+            Console.WriteLine($"The Letter Grade is {stats.Letter} !");
+        }
+
+        private static void EnterGrade(IBook book)
+        {
+            while (true)
             {
                 Console.WriteLine("Enter A Grade Or 'Q' to Quit");
                 var input = Console.ReadLine();
@@ -31,13 +42,13 @@ namespace GradeBook
                 {
                     var grade = double.Parse(input);
                     book.AddGrade(grade);
-                } 
-                catch(ArgumentException ex)
+                }
+                catch (ArgumentException ex)
                 {
                     Console.WriteLine(ex.Message);
                     // throw;
                 }
-                catch(FormatException ex)
+                catch (FormatException ex)
                 {
                     Console.WriteLine(ex.Message);
                 }
@@ -45,22 +56,11 @@ namespace GradeBook
                 {
                     Console.WriteLine("**");
                 }
-                
+
             }
             // book.AddGrade(89.1);
             // book.AddGrade(90.5);
             // book.AddGrade(77.5);
-            
-            var stats = book.GetStatistics();     
-
-
-
-            Console.WriteLine($"For the book Category : {Book.CATEGORY}");
-            Console.WriteLine($"For the book name : {book.Name}");
-            Console.WriteLine($"The Average Grade is {stats.Average:N1} !");
-            Console.WriteLine($"The Highest Grade is {stats.High:N1} !");
-            Console.WriteLine($"The Lowest Grade is {stats.Low:N1} !");
-            Console.WriteLine($"The Letter Grade is {stats.Letter} !");
         }
 
         static void OnGradeAdded(object sender , EventArgs e)

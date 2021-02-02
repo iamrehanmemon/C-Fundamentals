@@ -86,6 +86,7 @@ dotnet build -> builds our project as well as test the unit tests and shows the 
 please be caution to add [Fact] before each of the test inorder for the dotnet test command to recognise that the function is a test function
 Day to Day programming Doesnt uses pass by refernce that often but still sometimes bussiness require to use pass by reference
 
+
 Ref & out is similar but in out it assumes it is not initialize so it must be assigned before exiting but in ref u dont need to assign
 
 
@@ -116,3 +117,11 @@ Readonly Keyword - Can Only be defined in Constructor or variable initializer
 Constructor Overloading
 Const Field - Cannot be changed using Constructor
 Events - Delegate is defining how the method would look like. it has a define structure.
+
+8) Object Oriented Programming with C#
+Pillar of Object oriented such as Encapsulation allows to hide details about the code, Inheritance , Polymorphism. 
+Object Class is base Class of All the other Classes
+Abstract method that are inherited from the base classes can be overriden using the overriden keyword before the method naming.
+It helps in to achieve polymorphism ie it behave differently based on the circumstances. Over ride can only be done to abstract methods not not any other.
+
+Interface only describes which member should be availabel.
